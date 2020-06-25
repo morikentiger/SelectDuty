@@ -52,3 +52,10 @@ body {
 	box-shadow: 0 5px 0 #d1483e;
 	margin-top: 35px;
 }
+
+.inline-block_test {
+	display: inline-block;			/* インラインブロック要素にする */
+	background-color: #ccc;		/* 背景色指定 */
+	padding: 20px;							/* 余白指定 */
+	height: auto;								/* 高さ指定 */
+}
