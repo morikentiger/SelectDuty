@@ -4,9 +4,33 @@
 	const btn_male = document.getElementById('btn_male');
 	const btn_female = document.getElementById('btn_female');
 
+	
+
 	btn_male.addEventListener('click', () => {
 		const results = ['山田', '安田', '小野寺', '関根', '野嵜', '根本', '津山', '野口', '森田']
-		btn_male.textContent = results[Math.floor(Math.random() * results.length)];
+		// var roulette = function
+
+		function sleep(msec) {
+			return new Promise(function(resolve) {
+		
+				setTimeout(function() {resolve()}, msec);
+		
+			})
+		}
+	
+		async function start() {
+	
+			await sleep(300);
+			// console.log('0.3秒経過しました！');
+		
+		}
+
+		for (let i=0; i<10; i++) {
+			btn_male.textContent = results[Math.floor(Math.random() * results.length)];
+			start();
+		}
+			btn_male.textContent = results[Math.floor(Math.random() * results.length)];
+		
 	});
 
 	btn_female.addEventListener('click', () => {
