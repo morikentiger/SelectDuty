@@ -32,7 +32,8 @@ body {
 	width: 200px;
 	height: 200px;
 	background: #ef454a;
-	border-radius: 50%;
+	/* border-radius: 50%; */
+	transition: 0.05s; /* 回転遷移時間 */
 	margin: 30px auto;
 	text-align: center;
 	line-height: 200px;
@@ -51,6 +52,8 @@ body {
 #btn_female:active {
 	box-shadow: 0 5px 0 #d1483e;
 	margin-top: 35px;
+	border-radius: 50%;
+	transform: rotate(360deg);
 }
 
 .inline-block_test {
